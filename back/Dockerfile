@@ -3,10 +3,14 @@ FROM node:8
 
 WORKDIR /backend
 
+ENV PORT 8000
+ENV DAILYLOG_DB_ADDR mongodb:27017
+
+
 # Copy package.json and install dependencies
 COPY package*.json ./
 RUN npm install
-CMD ["npm", "start"]
+#CMD ["npm", "start"]
 
 # Copy rest of the application csource code
 COPY . .

@@ -3,6 +3,9 @@ FROM node:8
 
 WORKDIR /frontend
 
+ENV PORT 8000
+ENV DAILYLOG_API_ADDR backend:8000
+
 # Copy package.json and install dependencies
 COPY package*.json ./
 RUN npm install

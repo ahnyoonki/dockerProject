@@ -13,5 +13,9 @@
     "express": "^4.16.4",
     "mongodb": "^3.2.2",
     "mongoose": "^5.4.20"
-  }
+  },
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/ahnyoonki/dockerProject.git"
+}
 }
