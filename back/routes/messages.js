@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
 
 const DAILYLOG_DB_ADDR = process.env.DAILYLOG_DB_ADDR; 
-const mongoURI = "mongodb://" + DAILYLOG_DB_ADDR + "/dailylog"
+const DAILYLOG_DB_ADDR_QUERYSTRING = process.env.DAILYLOG_DB_ADDR_QUERYSTRING;
+const mongoURI = "mongodb://" + DAILYLOG_DB_ADDR + "/dailylog" + DAILYLOG_DB_ADDR_QUERYSTRING;
 
 const db = mongoose.connection;
 
