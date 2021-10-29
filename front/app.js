@@ -8,7 +8,7 @@ const util = require('./utils')
 
 const DAILYLOG_API_ADDR = process.env.DAILYLOG_API_ADDR
 
-const BACKEND_URI = `http://${DAILYLOG_API_ADDR}/messages`
+const BACKEND_URI = `${DAILYLOG_API_ADDR}/messages`
 
 app.set("view engine", "pug")
 app.set("views", path.join(__dirname, "views"))
